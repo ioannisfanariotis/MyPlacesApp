@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PlacesApp</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="add_image">ADD IMAGE</string>
+    <string name="save">SAVE</string>
+    <string name="there_are_no_places_yet">There are no places yet!</string>
+    <string name="image">image</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
