@@ -7,14 +7,6 @@
     android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
     tools:context=".activities.AddActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:background="@color/hue3"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        app:layout_constraintTop_toTopOf="parent"
-        android:theme="@style/customToolbar"/>
-
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -89,41 +81,22 @@
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:textColor="@color/hue3"
-                    android:textColorHint="@color/hue3"/>
+                    android:textColorHint="@color/hue3" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_location"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            <TextView
+                android:id="@+id/current"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_date">
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/et_location"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/location"
-                    android:inputType="text"
-                    android:textColor="@color/hue3"
-                    android:textColorHint="@color/hue3"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/place_image"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/shape_image"
-                android:scaleType="centerCrop"
-                android:src="@drawable/add_screen_image_placeholder"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/select"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_location"/>
+                app:layout_constraintTop_toBottomOf="@+id/til_location" />
 
             <TextView
                 android:id="@+id/add_image"
@@ -140,8 +113,44 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.45"
                 app:layout_constraintStart_toEndOf="@+id/place_image"
-                app:layout_constraintTop_toBottomOf="@+id/til_location"
-                app:layout_constraintVertical_bias="0.019"/>
+                app:layout_constraintTop_toBottomOf="@+id/current"
+                app:layout_constraintVertical_bias="0.019" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/place_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_screen_image_placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/save"
+                app:layout_constraintTop_toBottomOf="@+id/current" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_location"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_date">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/location"
+                    android:inputType="text"
+                    android:textColor="@color/hue3"
+                    android:textColorHint="@color/hue3" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/save"
@@ -155,7 +164,15 @@
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/place_image"/>
+                app:layout_constraintTop_toBottomOf="@+id/place_image" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/hue3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/customToolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

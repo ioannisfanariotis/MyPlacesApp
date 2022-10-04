@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -36,8 +37,17 @@ android {
 }
 
 dependencies {
+    //Dexter runtime permissions
     implementation 'com.karumi:dexter:6.2.3'
+    //Circle image view
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //This is for place picker
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+    //Dependency to include Maps SDK for Android
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    //This is for current location
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:1.1.0'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'

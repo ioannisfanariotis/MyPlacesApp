@@ -8,5 +8,7 @@
     <string name="save">SAVE</string>
     <string name="there_are_no_places_yet">There are no places yet!</string>
     <string name="image">image</string>
+    <string name="select">SELECT CURRENT LOCATION</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_api_key">AIzaSyDHExPE_ZhBZu9O5zDcNBDUokKTrcGaUsc</string>
 </resources>
