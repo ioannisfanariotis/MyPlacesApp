@@ -1,12 +1,6 @@
-MyPlacesApp let the user save his/her favourite place he/she has been or he/she wants to visit.
-In the beginning, the user can create a Recycler View where the title, the description, the date, the location and a photo are required.
-The date is automatically filled with the present date and it cannot be modified.
-The location can be searched out or can be selected from the user's current location.
-The photo can be added either from the gallery or from capturing a new one using the camera.
-The application will ask for permissions in order to get access to user's gallery and location.
-All the information are stored into SQLitw Database.
-All the Recycler Views are shown in the main screen and can be updated (by swiping right) or deleted (by swiping left).
-The user can tap on the Recycler View in order to see furthemore details and the exact spot of his/her selected place on Google Maps.
+MyPlacesApp let the user save his/her favourite place.
+Third Party Libraries that are used: DEXTER, Circle Image View, GMS.
+Technologies that are used: VIEW BINDING, SQLITE.
 
 ![1](https://user-images.githubusercontent.com/109162046/194761460-f9e01d48-b96d-4016-9987-05b255d53b93.PNG)
 ![2](https://user-images.githubusercontent.com/109162046/194761461-83fbe733-5fe2-4ee6-a60f-eee66380919d.PNG)
