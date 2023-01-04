@@ -1,6 +1,11 @@
 MyPlacesApp let the user save his/her favourite place.
-Third Party Libraries that are used: DEXTER, Circle Image View, GMS.
-Technologies that are used: VIEW BINDING, SQLITE.
+
+Libraries included for this project:
+- View Binding
+- SQLite
+- Dexter
+- Circle Image View
+- GMS
 
 ![1](https://user-images.githubusercontent.com/109162046/194761460-f9e01d48-b96d-4016-9987-05b255d53b93.PNG)
 ![2](https://user-images.githubusercontent.com/109162046/194761461-83fbe733-5fe2-4ee6-a60f-eee66380919d.PNG)
