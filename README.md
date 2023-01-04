@@ -1,6 +1,6 @@
 MyPlacesApp let the user save his/her favourite place.
 
-Libraries included for this project:
+Libraries included for this project
 - View Binding
 - SQLite
 - Dexter
